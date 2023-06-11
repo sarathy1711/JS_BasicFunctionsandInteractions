@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="hone"></h1>
+    <button onclick="sot()">
+        CLICK ME ASAP
+    </button>
+    <img src="Q.PNG" alt="thisisimage" id="imageid">
+    <button onclick="image1()">this is image</button>
+    <script>
+      // let/variable used here
+      let people = 10;
+      console.log("people count is", people);
+      // changing variable value
+      people = 25;
+      console.log("people count is updated as ", people);
+      // constant value
+      const pi = 3.14;
+      console.log("this is pi value", pi);
+      // mathematical functions
+      console.log("multiplying pi value * 10", pi * 10);
+      // alert message
+      alert("welcome to github");
+      // prompt + console
+      let age = prompt("Your age");
+      console.log("Your age:", age);
+      // addition in prompt
+      let a = prompt("enter an value");
+      console.log("addition of given value + 10 is", Number(a) + 10);
+      //confirm
+      let b = confirm("Are you okay ?");
+      alert(b);
+      // DOM (document object model) and functions
+      function sot() {
+        document.getElementById("hone").innerHTML = "welcome";
+      }
+      function image1(){
+        document.getElementById("imageid").src = "image1.png";
+      }
+
+    </script>
+  </body>
+</html>
